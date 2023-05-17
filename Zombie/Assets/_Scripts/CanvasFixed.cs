@@ -9,12 +9,8 @@ public class CanvasFixed : MonoBehaviour
     private void Awake()
     {
         cs = GetComponent<CanvasScaler>();
-        CanvasFix();
-    }
-    public void CanvasFix()
-    {
-        float width = 720.0f;
-        float height = 1280.0f;
+        float width = 1080f;
+        float height = 1920f;
 
         float dWidth = Screen.width;
         float dHeidth = Screen.height;

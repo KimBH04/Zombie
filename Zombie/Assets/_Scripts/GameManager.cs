@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        Screen.SetResolution(720, 1280, false);
+        Screen.SetResolution(1080, 1920, false);
         if (pausePanel)
         {
             pausePanel.SetActive(false);

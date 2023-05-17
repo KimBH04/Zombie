@@ -18,11 +18,11 @@ public class ZombieSpawn : MonoBehaviour
         Instantiate(zombie, transform.position, Quaternion.identity);
     }
 
-    void FixedUpdate()
+    void Update()
     {
         aTime -= Time.deltaTime / 10.0f;
         pTime += Time.deltaTime;
-        if (pTime > Mathf.Clamp(aTime, min,10.0f))
+        if (pTime > Mathf.Clamp(aTime, min, 10.0f))
         {
             transform.position = new Vector2(Random.Range(-5.0f, 5.0f), 5.0f);
             pTime = 0.0f;
